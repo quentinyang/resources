@@ -1,6 +1,6 @@
 # Resources
 
-Hello, welcome to here. I am an engineer. 
+Hello, welcome to here. I am a software engineer.
 
 I will put something here, maybe experience or knowledge or anything else interesting.
 

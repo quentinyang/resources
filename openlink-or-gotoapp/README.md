@@ -17,7 +17,6 @@ HTML编码如下：
        class="openlink-or-gotoapp">If installed app then go to app, else open web url. </a>
 ```
 
-
 ## JS代码
 
 放在统一的JS里：（假设是用的jQuery）
