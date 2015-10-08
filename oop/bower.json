@@ -1,0 +1,24 @@
+{
+  "name": "mvc",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ywjrg/program",
+  "authors": [
+    "杨文锦 <quentin.yang@angejia.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.2",
+    "zepto": "~1.1.6",
+    "zeptojs": "~1.1.6",
+    "vue": "~0.12.10",
+    "knockoutjs": "~3.3.0"
+  }
+}
