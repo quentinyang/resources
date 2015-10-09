@@ -1,0 +1,20 @@
+{
+  "name": "learningbackbone",
+  "version": "0.0.0",
+  "authors": [
+    "Quentin Yang <quentinyang1985@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "zepto": "~1.1.6"
+  }
+}
