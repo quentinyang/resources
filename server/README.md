@@ -1,6 +1,6 @@
 # Server
 
-## Build Server
+## Simple to build  your server
 
 ```
 forever server.js
