@@ -4,13 +4,24 @@ var http = require('http'),
 var server = http.createServer(function (req, res) {
 
     var file = __dirname + req.url;
-    try {
-        console.log('REQUEST: \n', req.url, '\nFILE:\n', file);
-        var stream = fs.createReadStream(file);
-        stream.pipe(res);
-    }catch(e) {
+
+    function error(req, res) {
         console.log('ERROR: \n', req.url, '\nFILE:\n', file);
         res.end('Error')
+    }
+
+    try {
+
+        console.log('REQUEST: \n', req.url, '\nFILE:\n', file);
+        if (fs.existsSync(file)) {
+            var stream = fs.createReadStream(file);
+            stream.pipe(res);
+        } else {
+            error(req, res);
+        }
+
+    }catch(e) {
+        error(req, res);
     }
 
 });
