@@ -3,7 +3,8 @@
 ## Simple to build  your server
 
 ```
-forever server.js
+forever server.js// run in terminal
+forever start server.js// run in backend
 ```
 
 Then visit:
