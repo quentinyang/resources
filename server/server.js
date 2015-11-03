@@ -3,7 +3,12 @@ var http = require('http'),
 
 var server = http.createServer(function (req, res) {
 
-    var file = __dirname + req.url;
+    var realUrl = req.url;
+    if (/\?/.test(req.url)) {
+        var realUrl = req.url.split('?')[0];
+
+    }
+    var file = __dirname + realUrl;
 
     function error(req, res) {
         console.log('ERROR: \n', req.url, '\nFILE:\n', file);
