@@ -3,11 +3,14 @@ var http = require('http'),
 
 var server = http.createServer(function (req, res) {
 
+    var headers = req.headers;
     var realUrl = req.url;
     if (/\?/.test(req.url)) {
         var realUrl = req.url.split('?')[0];
 
     }
+    
+
     var file = __dirname + realUrl;
 
     function error(req, res) {
@@ -16,6 +19,10 @@ var server = http.createServer(function (req, res) {
     }
 
     try {
+        
+        if (headers.connection === 'keep-alive') {
+            res.setHeader("connection", "keep-alive");
+        }
 
         console.log('REQUEST: \n', req.url, '\nFILE:\n', file);
         if (fs.existsSync(file)) {
