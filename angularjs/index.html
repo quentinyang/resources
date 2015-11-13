@@ -12,6 +12,12 @@
     <div filter></div>
     <div class="filter"></div>
     <!-- directive: filter -->
+
+    <div ng-controller="MyCtrl">
+        <div ng-repeat="filter in filters">
+            {{filter}}<filter></filter>
+        </div>
+    </div>
 </body>
 <script src="vendor/angularjs/angular.js"></script>
 <script src="js/directive/filter.js"></script>
