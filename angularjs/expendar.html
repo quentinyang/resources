@@ -1,14 +1,16 @@
 <html ng-app='expanderModule'>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <script src="vendor/angularjs/angular.js"></script>
+        <script src="vendor/angularjs/angular.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/expendar.css"/>
     </head>
     <body>
         <div ng-controller='SomeController'>
-            <expander class='expander' expander-title='title'>
-                {{text}}
-            </expander>
+            <accordion>
+                <expander class='expander' ng-repeat='expander in expanders' expander-title='expander.title'>
+                    {{expander.text}}
+                </expander>
+            </accordion>
         </div>
     </body>
     <script src="js/directive/expendar.js"></script>
