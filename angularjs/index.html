@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <filter></filter>
+    <filter>
+        <span>原始的内容，</span><br/>
+        <span>还会在这里。</span>
+    </filter>
     <div filter></div>
     <div class="filter"></div>
     <!-- directive: filter -->
 </body>
 <script src="vendor/angularjs/angular.js"></script>
-<script src="js/directive/filterBox.js"></script>
+<script src="js/directive/filter.js"></script>
 </html>
