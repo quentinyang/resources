@@ -1,0 +1,19 @@
+{
+  "name": "angularjs",
+  "version": "0.0.0",
+  "authors": [
+    "Quentin Yang <quentinyang1985@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.4.7"
+  }
+}
